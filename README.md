@@ -1,2 +1,4 @@
 # gestion-de-cartera
-Se encarga de encontrar las inconsistencias presentadas en el PYP
+Se encarga de depurar las facturas por servicios de PYP de una IPS con el fin de evitar glosas por parte de las EPS y ademas encontrar fallos en la tipificación de los procedimientos mediante el cruce de base de datos con el formato a revisar; este proceso se realiza teniendo encuenta diferentes aspectos.
+La manera de utilizar el aplicativo es mediante un archivo de excel que es generado por otro programa el cual contiene toda la informacion PYP este archivo es cargado al sistema desarrollado KLS v1.0 mediante la opcion "Importar Pagos" la cual importa estos datos en su forma original en caso de hallarse un erros el sistema lo informará seguido de esto se hará uso de la opcion "Cruzar Base de Datos" la cual identificara las cuentas facturas nuevas, abonos a facturas, modificacion a facturas, glosas entre otras.
+Cabe resaltar que este proceso se realizaba manualmente fila por fila y mediante el uso de esta herramienta el proceso se acelero significativamente.
