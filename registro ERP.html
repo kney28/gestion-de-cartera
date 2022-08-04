@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ERP</title>
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+function justNumbers(e)
+        {
+        var keynum = window.event ? window.event.keyCode : e.which;
+        if ((keynum == 8) || (keynum == 46))
+        return true;
+         
+        return /\d/.test(String.fromCharCode(keynum));
+        }
+  </script>   
+<form name="form1" method="post" action="">
+  <table width="200" border="1" cellspacing="0">
+    <tr>
+      <td>Tipo de Identificacion ERP</td>
+      <td>Numero de Identificacion</td>
+      <td>Nombre de la ERP</td>
+      <td rowspan="2"><input type="submit" name="enviar" id="enviar" value="Registrar ERP"></td>
+    </tr>
+    <tr>
+      <td><input name="tipo_ident_erp" type="text" required id="tipo_ident_erp" title="Escriba el tipo de identificacion" size="5" maxlength="3" onkeypress="return justNumbers(event);" value="" ></td>
+      <td><input type="text" title="Escriba el numero de identificacion de la ERP" name="num_ident_erp" id="num_ident_erp" required></td>
+      <td><input type="text" title="Escriba el nombre de la ERP" name="nombre_erp" id="nombre_erp" required></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{margin:0; padding:0;}
+header{ width:100%; margin-top:3px; height:150%; position:relative;}
+nav{ top:-20px; position:absolute; left:0; right:0; margin:20px auto; max-width:1000px; width:90;}
+nav ul{list-style:none;}
+nav >ul{ display:table; width:100%; background:#000; position:relative;}
+nav >ul li{ display:table-cell;}
+nav >ul li a{ color:#fff; display:block; line-height:20px; padding:20px; position:relative; text-align:center; text-decoration:none;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+nav >ul li> a span{ background:#174459; display:block; height:100%; width:100%; left:0; position:absolute; top:-60px;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;}
+nav >ul li> a span .icon{ display:block; line-height:60px;}
+nav >ul li> a:hover > span{ top:0;}
+/*colores*/
+
+.primero{ background:#0e5061;}
+.segundo{ background:#5da5a2;}
+.tercero{ background:#f25724;}
+.cuarto{ background:#174459;}
+.quinto{ background:#37a4d9;}
+.sexto{ background: rgb(153,0,0);}
