@@ -16,7 +16,8 @@ $fecha_emision_factura=$_POST["fecha_emision_factura"];
 $fecha_prestacion_factura=$_POST["fecha_prestacion_factura"];
 $fecha_devolucion=$_POST["fecha_devolucion"];
 $glosa_respuesta=$_POST["glosa_respuesta"];
-$valor_glosa=$_POST["valor_glosa"];
+if(empty($valor_glosa=$_POST["valor_glosa"])){
+$valor_glosa=0;}
 $estado_juridico=$_POST["estado_juridico"];
 $etapa_procesos=$_POST["etapa_procesos"];
 
