@@ -11,8 +11,8 @@ $t=0;// barra de carga*/
 
 mysqli_connect(
 string $host= "containers-us-west-79.railway.app",
-string $username= ini_get("root"),
-string $passwd= ini_get("pt0FWN1r4EyOpKTqNpVAr"),
+string $username= "root",
+string $passwd= "pt0FWN1r4EyOpKTqNpVAr",
 string $dbname= "railway",
 int $port =ini_get("6777")
 ): mysqli
