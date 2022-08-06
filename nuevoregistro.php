@@ -32,15 +32,15 @@ mysqli_query($conexion,$consulta) or die ("<p>No se ha podido conectar la consul
  
 
 $consulta2 = "INSERT INTO tabla_relacional (numero_ident_erp, numero_ident_ips, numero_factura) values ('$numero_ident_erp', '$numero_ident_ips','$numero_factura')";
-mysql_query($consulta2,$conexion) or die ("<p>No se ha podido conectar la consulta 2<p>. ".mysql_error());
+mysqli_query($conexion,$consulta2) or die ("<p>No se ha podido conectar la consulta 2<p>. ".mysql_error());
 }
 
 elseif($tipo_actualizacion==1){
 $update1="update facturas set prefijo_factura='$prefijo_factura',indicador_actualizacion='$indicador_actualizacion',valor_factura='$valor_factura',fecha_emision_factura='$fecha_emision_factura',fecha_prestacion_factura='$fecha_prestacion_factura',fecha_devolucion='$fecha_devolucion',valor_glosa='$valor_glosa',glosa_respuesta='$glosa_respuesta',estado_juridico='$estado_juridico',etapa_proceso='$etapa_procesos' where numero_factura='$numero_factura'";
-  	mysql_query($update1,$conexion)or die ('corregir centencia'.mysql_error());
+  	mysqli_query($conexion,$update1)or die ('corregir centencia'.mysql_error());
 	
 $update2="update tabla_relacional set numero_ident_erp='$numero_ident_erp' where numero_factura='$numero_factura'";
-  	mysql_query($update2,$conexion)or die ('corregir centencia'.mysql_error());	
+  	mysqli_query($conexion,$update2)or die ('corregir centencia'.mysql_error());	
 		
 	}
 include('cruceauto.php');	
