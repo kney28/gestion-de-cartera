@@ -10,7 +10,7 @@ $consul=NULL;
 $t=0;// barra de carga*/
 
 mysqli_connect(
-string $host= "containers-us-west-79.railway.app",
+string $hosti= "containers-us-west-79.railway.app",
 string $username= "root",
 string $passwd= "pt0FWN1r4EyOpKTqNpVAr",
 string $dbname= "railway",
