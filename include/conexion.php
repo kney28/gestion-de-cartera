@@ -40,5 +40,5 @@ if (mysqli_connect_error()) {
 
 echo 'Éxito... ' . $conexion->host_info . "\n";
 
-$conexion->close();
+//$conexion->close();
 ?>
