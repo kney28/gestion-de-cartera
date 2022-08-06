@@ -18,7 +18,7 @@ int $port =ini_get("6777")
 ): mysqli
 */
 
-$mysqli = new mysqli('containers-us-west-79.railway.app', 'root', 'pt0FWN1r4EyOpKTqNpVAr', 'railway',6777);
+$mysqli = new mysqli('containers-us-west-79.railway.app', '', 'pt0FWN1r4EyOpKTqNpVAr', 'railway',6777);
 
 /*
  * Esta es la forma OO "oficial" de hacerlo,
