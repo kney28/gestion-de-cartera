@@ -26,7 +26,7 @@ if ($tipo_actualizacion==0){
 $consulta="INSERT INTO facturas values('$tipo_registro','$tipo_cobro','$prefijo_factura','$numero_factura','$indicador_actualizacion',
 '$valor_factura','$fecha_emision_factura','$fecha_prestacion_factura','$fecha_devolucion','','$valor_glosa','$glosa_respuesta','',
 '$estado_juridico','$etapa_procesos','$fecha_registro')"; //esto va a la tabla idcursos
-mysqli_query($consulta,$conexion) or die ("<p>No se ha podido conectar la consulta<p>. ".mysql_error());
+mysqli_query($conexion,$consulta) or die ("<p>No se ha podido conectar la consulta<p>. ".mysql_error());
 
  
 
