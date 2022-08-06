@@ -18,15 +18,15 @@ int $port =ini_get("6777")
 ): mysqli
 */
 
-$mysqli = new mysqli('containers-us-west-79.railway.app', 'root', 't0FWN1r4EyOpKTqNpVAr', 'railway',6777);
+$conexion = new mysqli('containers-us-west-79.railway.app', 'root', 't0FWN1r4EyOpKTqNpVAr', 'railway',6777);
 
 /*
  * Esta es la forma OO "oficial" de hacerlo,
  * AUNQUE $connect_error estaba averiado hasta PHP 5.2.9 y 5.3.0.
  */
-if ($mysqli->connect_error) {
-    die('Error de Conexión (' . $mysqli->connect_errno . ') '
-            . $mysqli->connect_error);
+if ($conexion->connect_error) {
+    die('Error de Conexión (' . $conexion->connect_errno . ') '
+            . $conexion->connect_error);
 }
 
 /*
@@ -38,7 +38,7 @@ if (mysqli_connect_error()) {
             . mysqli_connect_error());
 }
 
-echo 'Éxito... ' . $mysqli->host_info . "\n";
+echo 'Éxito... ' . $conexion->host_info . "\n";
 
-$mysqli->close();
+$conexion->close();
 ?>
